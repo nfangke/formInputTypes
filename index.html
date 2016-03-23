@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Forms</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+
+        <div class="form-group">
+          <label for="wholeName">What's your name?</label>
+          <input type="text" class="form-control" id="wholeName">
+        </div>
+
+        <div>
+          <p><strong>What is your favorite drink?</strong></p>
+          <select class="form-control" id="beverage">
+            <option>Coffee</option>
+            <option>Tea</option>
+            <option>Kombucha</option>
+            <option>Water</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <p><strong>Of these, which is your favorite band?</strong></p>
+
+          <div class="radio">
+              <label>
+                <input type="radio" name="band" value="band1" checked>
+                Band 1
+              </label>
+          </div>
+
+          <div class="radio">
+              <label>
+                <input type="radio" name="band" value="band2">
+                Band 2
+              </label>
+          </div>
+
+          <div class="radio">
+              <label>
+                <input type="radio" name="band" value="band3">
+                Band 3
+              </label>
+          </div>
+
+        </div>
+
+        <button class="btn btn-primary">submit</button>
+      </form>
+    </div>
+
+    <div id="output">
+    </div>
+  </body>
+</html>
